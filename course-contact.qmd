@@ -1,0 +1,11 @@
+---
+title: "Contacto con el profesor"
+---
+
+Todas los pdfs de clases, los laboratorios y actualizaciones serán subidos en esta plataforma y en el moodle. **Los videos de las clases no se pueden subir a esta plataforma, pero estarán disponible en moodle**.
+
+Tendremos dos vías de comunicación:
+
+-   Slack del curso: actuaremos en una lógica de foro para esto utilizaremos una plataforma llamada slack donde pueden preguntar y las respuestas estarán disponibles para otros. **Pueden acceder al slack creandose una cuenta y buscando el canal: C057ZU1S4RJ**, también pueden dar [click aquí](https://app.slack.com/huddle/T058M4DFSAU/C057ZU1S4RJ).
+
+-   Contacto vía correo: pueden hacer dudas o solicitar un horario de atención a [jdconejeros\@uc.cl](jdconejeros@uc.cl).

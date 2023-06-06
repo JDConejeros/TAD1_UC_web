@@ -1,0 +1,27 @@
+---
+title: "Literatura del curso"
+---
+
+El curso tendrá lecturas obligatorias y complementarias clase a clase.
+
+## Manipulación de tablas en R
+
+Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc.". Versión en español: <https://r4ds.hadley.nz/>
+
+Urdinez, F., & Cruz, A. (2020). R for Political Data Science: A Practical Guide. CRC Press. Recurso en línea en español: <https://arcruz0.github.io/libroadp/>
+
+## Visualización de datos
+
+Healy, K. (2018). Data visualization: a practical introduction. Princeton University Press. Recurso en línea: <https://socviz.co/>
+
+Whickham, H., Navarro, D., & Pedersen, T. L. ggplot2: Elegant Graphics for Data Analysis \[Internet\]. \[cited 2021 Mar 17\]. Versión en inglés: <https://ggplot2-book.org/>
+
+## Programación funcional
+
+Wickham, H. (2019). Advanced r. CRC press. Versión en inglés: <https://adv-r.hadley.nz/>
+
+## Reportería
+
+Xie, Y., Allaire, J. J., & Grolemund, G. (2018). R markdown: The definitive guide. Chapman and Hall/CRC. Versión en inglés: <https://bookdown.org/yihui/rmarkdown/>
+
+Welcome to Quarto: An open-source scientific and technical publishing system. Website: <https://quarto.org/>

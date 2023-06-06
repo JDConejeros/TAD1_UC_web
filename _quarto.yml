@@ -1,0 +1,110 @@
+project:
+  type: website
+
+lang: es
+
+website:
+  page-navigation: true
+  title: "TAD1 - Año 2023"
+  description: "TAD1-23 - Taller de análisis de datos I, Escuela de Ingenería y Gobierno UC. Versión 2023."
+  site-url: "https://jd-conejeros.com/"
+
+  repo-url: https://github.com/JDConejeros/TAD1_UC_web
+  repo-actions: [edit, issue]
+
+  open-graph: true
+
+  twitter-card:
+    creator: "@Jose_Conejeros"
+    image: "images/logo.png"
+
+  page-footer:
+    left: |
+      <span class="faux-block">{{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} 2023, José Daniel Conejeros Pavez | [Licencia](licenses.qmd) </span> <br>
+      <span class="faux-block">[¿Donas un {{< fa mug-hot >}}?](https://www.buymeacoffee.com/joconejerov) | [![](/images/fgch.png){fig-alt="https://galgos.donando.cl/" fig-align="center" width="20"}](https://galgos.donando.cl/)[Dona a la fundación Galgos Chile](https://galgos.donando.cl/) </span>
+    right: |
+      <span class="faux-block">Hecho con {{< fa brands r-project >}}, [Quarto](https://quarto.org) y [ChatGPT](https://openai.com/api/) </span> <br>
+      <span class="faux-block">Revisa el código fuente en {{< fa brands github >}} [GitHub](https://github.com/JDConejeros/JDC_website) </span>
+
+  sidebar:
+    background: "#FAAE27"
+    logo: "images/logo_tad1.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/JDConejeros/TAD1_UC_web
+        text: "Repositorio del sitio web"
+      - icon: code-square
+        href: https://ep.ingenieriauc.cl/course/view.php?id=4101
+        text: "Acceso a la plataforma moodle"
+      - icon: slack
+        href: https://app.slack.com/huddle/T058M4DFSAU/C057ZU1S4RJ
+        text: "Dudas a través de slack"
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Información del curso"
+        contents:
+          - href: index.qmd
+            text: "Descripción del curso"
+          - href: course-bib.qmd
+            text: "Literatura del curso"
+          - href: course-team.qmd
+            text: "Equipo docente"
+          - href: course-contact.qmd
+            text: "Atención de estudiantes"
+      - section: "Material de clases"
+        contents:
+          - href: class/class-1.qmd
+            text: "Clase 1"
+          # - href: class/class-2.qmd
+          #   text: "Clase 2"
+      - section: "Laboratorios"
+        contents:
+          - href: labs/lab-1.qmd
+            text: "Lab 1"
+      # - section: "Material suplementario"
+      #   contents:
+          # - href: supplemental/slr-derivations.qmd
+          #   text: SLR derivations
+          # - href: supplemental/model-diagnostics-matrix.qmd
+          #   text: Model diagnostics
+          # - href: supplemental/mlr-matrix.qmd
+          #   text: MLR matrix notation
+          # - href: supplemental/log-transformations.qmd
+          #   text: Log transformations
+          # - href: supplemental/model-selection-criteria.qmd
+          #   text: Model selection criteria
+
+format:
+  html:
+    theme:
+      dark: [cosmo, theme-dark.scss]
+      light: [cosmo, theme.scss]
+    mainfont: "Atkinson Hyperlegible"
+    toc: true
+    code-copy: true
+    code-link: true
+    anchor-sections: true
+    code-overflow: wrap
+    fig-cap-location: margin
+    reference-location: margin
+    footnotes-hover: true
+    highlight-style: monokai
+    css: styles.css
+    grid:
+      sidebar-width: 250px
+      body-width: 1000px
+      margin-width: 250px
+
+execute:
+  freeze: auto
+
+  editor: visual
+
+
+
+editor: visual

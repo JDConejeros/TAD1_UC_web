@@ -1,0 +1,34 @@
+---
+title: "Equipo docente"
+---
+
+```{r}
+```
+
+## Profesor
+
+El ayudante estará a cargo de a) entregar las clases a los estudiantes, b) realizar las correcciones de las evaluaciones c) contacto con estudiantes.
+
+![](images/team/jose.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of JDC" width="200"}
+
+[**José Daniel Conejeros**](https://jd-conejeros.com/); [`r fontawesome::fa(name = "envelope", fill = "duotone")` jdconejeros\@uc.cl](jose.conejeros1@mail.udp.cl); [`r fontawesome::fa(name = "github", fill = "duotone")` JDConejeros](https://github.com/JDConejeros); [`r fontawesome::fa(name = "link", fill = "duotone")` jd-conejeros.com](https://jd-conejeros.com)
+
+Licenciado en Ciencias Sociales, Magíster (c) en Sociología y Estadística PUC. Sus temas de investigación actual son salud pública, cambio climático, pobreza y metodologías cuantitativas. Ha participado en proyectos de investigación en educación, género y actualmente pertenece al Nucleo Milenio de Resistencia Bacteriana (Microb-R). En el ámbito profesional, ha sido consultor en temas cuantitativos para distintas fundaciones y organizaciones sin fines de lucro.
+
+<br>
+
+## Ayudante
+
+El ayudante estará a cargo de a) ofrecer sesiones de apoyo a los estudiantes y b) realizar las correcciones de las tareas escritas.
+
+![](images/team/sofia.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Sofía Madariaga" width="200"}
+
+[**Sofía Madariaga**](https://github.com/s-madariaga)
+
+[`r fontawesome::fa(name = "envelope", fill = "duotone")` sofia.madariaga\@mail.udp.cl](sofia.madariaga@mail.udp.cl)
+
+[`r fontawesome::fa(name = "github", fill = "duotone")` s-madariaga](https://github.com/s-madariaga)
+
+`r fontawesome::fa(name = "graduation-cap", fill = "duotone")` Sociología, Pontificia Universidad Católica
+
+`r fontawesome::fa(name = "book-bookmark", fill = "duotone")` Temas de interés: Educación, consumo cultural y aplicaciones computacionales a la estadística

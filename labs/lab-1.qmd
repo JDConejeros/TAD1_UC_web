@@ -1,0 +1,545 @@
+---
+title: "Laboratorio 1"
+subtitle: "Iniciación en R"
+editor: visual
+---
+
+::: {.callout-note title="Conceptos claves"}
+**Objeto**: contenedores de información que permiten al usuario realizar procedimientos numéricos, estadísticos, tabulaciones, entre otros.
+
+**Estructuras de datos**: son formatos de almacenamiento de información.
+
+**Funciones**: acciones que se realizan sobre los objetos y que producen un output. Por ejemplo, calcular la media sobre un vector sería: `mean(objeto)`
+
+**Coerción implícita**: proceso en el cual el lenguaje de programación define un ajuste por defecto.
+:::
+
+En este taller nos enfocaremos en una introducción a R para el procesamiento datos. Para instala `R` y `RStudio` en tu computador puedes recurrir a los siguientes enlaces: 
+
+- <https://cran.r-project.org/>
+- <https://posit.co/download/rstudio-desktop/>
+
+También puedes ver el siguiente video tutorial: <https://jd-conejeros.com/blog/2023/2023-03-15-r-rstudio/>
+
+Recuerda que puedes descargar y reproducir este proyecto directo en `RStudio` dando [Click aquí](/labs/TAD1_clase1_Taller.zip "Lab 1 zip") ⏎
+
+
+## Interactuando con R y RStudio
+
+Los comentarios que no se ejecutan como comandos, en otras palabras, es código no ejecutable:
+
+```{r}
+# : Comentarios que no se ejecutan como comandos
+# + : Sigue el comando en la próxima linea
+# ; : Para escribir más de una función en la misma línea
+```
+
+**Recomendación general:** todo lo que tenga que ver con procesamiento, análisis de bases de datos, entre otros, debe ser en un lenguaje estandarizado: sin tilde, ñ, caracteres especiales ni mayúsculas. Con esto se evitan bastantes problemas en un inicio. 
+
+Los directorios son relevantes, pues nos entregan una ruta relativa a la cual acceder en nuestro computador. Para esto podemos usar las siguientes funciones en `R`:
+
+```{r}
+#| eval: false
+# Consultar directorio de trabajo propio
+getwd() 
+
+# Fijar un directorio de trabajo
+setwd("/Users/josedanielconejeros/Dropbox") 
+```
+
+Al inicio es complejo trabajar con rutas relativas, ya que implica a) uno debe investigar la ruta a la cual acceder en su computador y b) es fácil cometer errores de tipeo al escribir. Esto puede volver tortuoso el proceso al inicio, además fijar rutas relativas puede variar según el sistema operativo:
+
+```{r}
+#| eval: false
+#Windows (\)
+setwd("\Users\josedanielconejeros\Dropbox")
+
+#Mac (/)
+setwd("/Users/josedanielconejeros/Dropbox")
+```
+
+La mejor opción, será trabajar proyectos en `R`. Puedes crear proyectos de la siguiente manera: <video https://www.youtube.com/watch?v=FnkdlMIHYqQ>
+
+## Objetos en R
+
+En términos generales, todos los elementos que maneja `R` son objetos: un valor numérico es un objeto, un vector es un objeto, una función es un objeto, una base de datos es un objeto, un gráfico es un objeto, etc. Los objetos son entes con datos almacenados, en palabras más sencillas,  contenedores de información que permiten al usuario realizar procedimientos numéricos, estadísticos, tabulaciones, entre otros.
+
+Que `R` sea un lenguaje de programación orientado a objetos (*Object-Oriented Programming*) significa que una misma función hace cosas distintas según la clase del objeto que recibe como argumento, pudiendo incluso no hacer nada (o producir un error) si se le pasan argumentos de una clase inadecuada.
+
+A continuación veremos algunos objetos de ejemplo: 
+
+### Vectores numéricos 
+
+Podemos considerar vectores de uno o varios elementos 
+
+```{r}
+a1 <- c(1) #Vector de un elemento
+a2 = c(1)
+a3 <- c(1, "hola" , "chao" , 4) #Crear un vector números y carácteres
+```
+
+Si quisiera imprimir estos vectores puede escribir el nombre del objeto
+
+```{r}
+a1
+a2
+a3
+```
+
+Podemos construir secuencias de valores
+
+```{r}
+#Secuencia de valores
+1:4
+4:1
+?seq
+seq(1, 4) 
+seq(4, 1)
+-1:2
+seq(-1, 2)
+seq(from=2, to=8, by=2)
+seq(0, 1, by=0.1)
+seq(0, 1, length=10)
+rep(0:1, 10)
+?length # Para consultar argumentos de la función
+```
+
+La importancia de los elementos que componen el objeto:
+
+```{r}
+numeros_palabras <- c(1, "hola" , "chao" , 4)
+numeros_palabras
+
+secuencia <- seq(0, 1, length=11)
+secuencia
+```
+```{r}
+#| error: true
+secuencia*numeros_palabras
+```
+
+En este caso se produce porque está intentando multiplicar un vector de texto por uno numérico.
+
+::: {.callout-note title="Conceptos claves"}
+**Coerción implícita**: proceso en el cual el lenguaje de programación define un ajuste por defecto. En este caso `c(1, "hola" , "chao" , 4)` asume por defecto que el vector será de caracteres. 
+:::
+
+También podemos realizar operaciones aritméticas con vectores:
+
+```{r}
+c(1, 2, 3, 4)/2
+(1:4)/2
+(1:4)*(4:1)
+c(1,2,3,4)*c(4,3,2,1)
+
+c(1, 2 , 3 , 4) + c(4, 3)
+c(1, 2 , 3 , 4) + c(4, 3, 2) #Produce warning cuando no son múltiplos
+```
+
+Podemos realizar operaciones aritméticas con los objetos que componen esos vectores
+
+```{r}
+secuencia <- seq(0, 1, length=11)
+secuencia
+secuencia <- secuencia*secuencia
+secuencia
+secuencia^2
+promedio <- sum(secuencia)/11
+promedio
+```
+
+### String y factores
+
+Tendremos instancias para profundizar en este tipo de objetos. Lo importante es recordar la coerción implíca subyacente a la hora de trabajar con textos. 
+
+```{r}
+#Dummy
+sexo <- c("Femenino", "Masculino", "Masculino", "Femenino")
+sexo[1:2] 
+sexo <- c(1,0,0,1)
+sexo[1:2] 
+
+#Nominales
+animales <- c("Elefante", "Jirafa", "Mono", "Caballo")
+animales[1]
+
+#Ordinal 
+acuerdo <- c("Muy en Desacuerdo", "Desacuerdo", "Ni en desacuerdo", "Ni en desacuerdo" , 
+             "Deacuerdo", "Muy deacuerdo")
+acuerdo[5]
+```
+
+**¿Cuál es el problema con estas variables?** 
+
+```{r}
+class(sexo)
+```
+
+En ciertas operaciones, como la visualización de datos, contar con un formato más ordenado a la hora de construir una variable cualitativa es clave. Para esto utilizamos los **factores**. 
+
+Los factores son variables que cuenta con etiquetas que permiten representar sus valores numéricos. A continuación un ejemplo: 
+
+```{r}
+#Debemos crear factores numéricos con etiquetas
+sexo <- factor(c(0,1,1,0))
+sexo
+#Generamos etiquetas
+sexo <- factor(sexo, labels = c("Mujer", "Hombre"))
+sexo
+```
+
+```{r}
+class(sexo)
+```
+
+## Matrices, dataframes y listas
+
+### Matrices 
+
+Las matrices son arreglos bidimensionales (filas, columnas) y solo cuentan con elementos de la misma naturaleza. Por ejemplo, la siguiente matriz cuenta con solo elementos de tipo numérico: 
+
+```{r}
+#Ejemplo de matriz
+matrix(1:9,3,3) #Matriz de 3filasx3columnas con valores del 1 al 9
+```
+
+También podemos considerar las matrices sobre objetos y realizar acciones sobre ellas: 
+
+```{r}
+x <- matrix(1:9,3,3)
+x
+# Podemos ver las dimensiones de la matriz (fila, columna)
+dim(x)
+```
+
+Construyamos las siguientes matrices: 
+
+```{r}
+# Podemos definir objetos como matrices
+y <- matrix(1:8,2,4,byrow = FALSE) #Genera una matriz con 2 filas y 4 columnas
+y
+dim(y)
+
+z <- matrix(1:8,2,4,byrow = TRUE) #Genera la matriz completándola por filas
+z
+dim(z)
+```
+
+A continuación aplicaremos operaciones matemáticas con dichas matrices:
+
+```{r}
+# Suma
+sum <- y + z
+sum
+
+# Resta
+diff <- y - z
+diff
+
+# Transponer
+t(y)
+
+# Multiplicar/dividir por un escalar
+y*2
+2*y
+y/2
+
+# Multiplicación elemento a elemento
+y*z
+```
+
+La multiplicación de matrices no es elemento a elemento. En este caso `R` tiene operadores especiales para la matemática matricial:
+
+```{r}
+#| error: true
+y %*% z
+```
+
+**¿Cuál es el error?** El número de columnas de la primera matriz debe ser igual al número de filas de la segunda. Construímos nuestra matriz cuadrada:
+
+```{r}
+y # Matriz original
+y_cuadrada <- y[1:2,1:2] # Matriz cuadrada
+# Multiplicación de matrices
+y_cuadrada %*% z
+```
+El determinante de una matriz es se obtiene al restar la multiplicación de los elementos de la diagonal principal de la matriz y la multiplicación de los elementos de la diagonal secundaria de la misma matriz. Esto nos será útil pues permite saber si estamos frente a una matriz singular ($det=0$) o no singular ($det\neq0$). 
+
+```{r}
+# Determinante
+det(y_cuadrada)
+```
+
+Los determinantes son esenciales cuando queremos encontrar la matriz inversa y con esto aplicar técnicas de modelamiento estadístico como la regresión lineal ($\hat{\boldsymbol{\beta}} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{Y}$).
+
+```{r}
+y_invertida <- solve(y_cuadrada)
+y_invertida
+```
+
+Si multiplicamos la matriz original por la inversa obtenemos la identidad: 
+
+```{r}
+# Comprobamos
+y_cuadrada %*% y_invertida
+```
+
+Otras operaciones útiles con matrices: 
+
+```{r}
+# Rango de una matriz
+qr(y_cuadrada)
+qr(y_cuadrada)$rank
+
+# Diagonal de una matriz
+y_cuadrada
+diag(y_cuadrada)
+
+# Construímos la matriz identidad
+diag(5)
+```
+
+Podemos construir una matriz de datos:
+
+```{r}
+# Generamos vectores de información
+edad <- c(23, 45, 67, 89)
+sexo <- c(1, 0, 1, 0)
+peso <- c(80, 60, 70, 50)
+altura <- c(180, 160, 200, 140)
+promedio <- mean(altura) # Vamos a guardarlo para después
+```
+
+Construímos las matrices:
+
+```{r}
+# Unimos las matrices por separado
+matriz_a <- cbind(edad, sexo) # Columnas
+matriz_a
+
+matriz_b <- cbind(peso, altura)
+matriz_b
+
+# Combinar matrices
+matriz <- cbind(matriz_a, matriz_b)
+matriz
+matriz[1,2] #Podemos ver el elemento 1 de la columna 2
+```
+
+Más detalles sobre matrices: 
+
+Bates, Douglas, Martin Maechler, and Mikael Jagan. 2022. Matrix: Sparse and Dense Matrix Classes and Methods. [https://cran.r-project.org/web/packages/Matrix/Matrix.pdf](https://cran.r-project.org/web/packages/Matrix/Matrix.pdf) ⏎
+
+### Marcos de datos
+
+Un marco de datos (O *dataframe*) es un objeto bidimensional, pero a diferencia de las matrices (numéricas), pueden almacenar objetos de distinta naturaleza (alfanuméricos). En términos más precisos es un arreglo de vectores ordenados por columnas. Podemos transformar facilmente nuestra matriz en un marco de datos. 
+
+```{r}
+class(matriz)
+# Transformamos a un marco de datos
+data <- as.data.frame(matriz)
+class(data)
+```
+
+Dada su estructura bidimensional, podemos extraer información desde los marcos de datos aplicando la lógica `[fila, columna]`. Veamos un ejemplo:
+
+```{r}
+data[1] # Columna
+data["edad"] # Columna
+data[1,1] # Fila, columna
+data[,1] # Fila
+```
+
+Una forma de acceder a las variables de una marco de datos es aplicar un indexador `$`, por ejemplo: 
+
+```{r}
+data$edad
+```
+
+Esto es factible ya que el marco de datos no es más que un arreglo de vectores. 
+
+### Listas 
+
+La lista representa el siguiente nivel de complejidad en las estructuras de datos que R es capaz de manejar. Podemos entender una lista como un contenedor de objetos que pueden ser de cualquier clase: números, vectores, matrices, funciones, data.frames, incluso otras listas. Una lista puede contener a la vez varios de estos objetos, que pueden ser además de distintas dimensiones.
+
+Veamos un ejemplo:
+
+```{r}
+#Creamos una lista
+#matriz, valor, vector numérico, vetor de caracteres
+objeto <- list(matriz, promedio, sexo, animales) 
+objeto
+```
+
+Podemos acceder a la información de las listas de variables maneras:
+
+```{r}
+objeto[[1]]
+```
+
+También es posible realizar operaciones con las listas: 
+
+```{r}
+objeto[[1]]*2
+```
+
+Estas estructuras de datos serán bastante útiles a la hora de extraer información de funciones, realizar procesos iterativos y la extracción de datos desde la web. 
+
+## Operadores en R 
+
+Los operadores en R nos permiten complementar las acciones que estamos realizando sobre los objetos. Los más utilizados son: 
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+**Operadores lógicos**
+
+- `&` = Y 
+- `|` = O
+- `!` = Negación
+- `~` = Negación
+
+:::
+
+::: {.column width="25%"}
+
+**Operadores aritméticos**
+
+- `+` = Suma
+- `-` = Resta
+- `*` = Multiplicación 
+- `/` = División
+- `^` = Potencia
+
+:::
+
+::: {.column width="25%"}
+
+**Operadores relacionales**
+
+- `>` = Mayor que 
+- `<` = Menor que
+- `>=` = Mayor o igual que 
+- `<=` = Menor o igual que 
+- `==` = Igual
+- `!=` = No igual 
+- `~=` = No igual
+
+:::
+
+::: {.column width="50%"}
+
+**Otros**
+
+- `NA` = Valor perdido
+
+:::
+
+::::
+
+Veamos algunos ejemplos: 
+
+```{r}
+# Definamos valores
+a <- 3
+b <- 2.999
+c <- 1
+
+# Apliquemos las condiciones
+c != a
+a == b  # ¿Qué pasa si solo uso =?
+
+a > b 
+b < c
+```
+
+Trate de identificar los valores resultantes que obtuvo:
+
+```{r}
+a > b & b < c
+a > b | b < c
+```
+
+## Funciones y argumentos
+
+### Funciones
+
+Las funciones son acciones que se realizan sobre los objetos en `R`, operan bajo la siguiente lógica:
+
+![Lógica de funciones en R](img/log_r.png){width=750}
+
+Veamos algunos ejemplos:
+
+```{r}
+#| error: true
+# Definamos objetos
+a <- seq(1:100)
+b <- c("uno", "dos", "tres")
+
+# Apliquemos las funciones 
+log("a")
+log(b)
+```
+
+```{r}
+# Apliquemos sobre los objetos
+log(a) # Por DEFAULT es logaritmo natural, en base a euler 2,718.
+log(a, base=10)
+log(2.718) # Cercano a 1 porque euler elevado a 1 = euler
+log(100, base=10)
+log10(100) # Forma equivalente de lo anterior
+log10(a)
+```
+
+
+### Argumentos
+
+Los argumentos de una función no son más que configuraciones particulares de la función para que realice la acción que deseamos, podemos consultarlas de la siguiente manera: 
+
+```{r}
+help("log") #Para saber argumentos (elementos de la función)
+?log
+args("log")
+
+?sum
+args("sum")
+```
+
+Veamos un ejemplo práctico en donde sea útil especificar un argumento:
+
+```{r}
+# Definimos un objeto con un elemento missing 
+a <- c(1, 2, NA, 4)
+# Aplicamos un objeto 
+sum(a)
+```
+
+En este caso retorna un `NA` ya que nuestro vector tiene un elemento que es missing value, por lo que ante ese contexto la programación tiene definido por defecto retornar un `NA`. Podemos cambiar esto especificando el argumento `na.rm=TRUE` de la siguiente manera: 
+
+```{r}
+sum(a, na.rm=TRUE)
+```
+
+Ahora obtuvimos el resultado, pues le dijimos al `R` que sume los valores  asumiendo como  verdadera la orden: *remover los valores NA*
+
+## Ejercicio propuesto 
+
+Revise la siguiente función y responda las preguntas.
+
+```{r}
+fun3 <- function(x){ifelse(-10 <= x  & x < -5, x*2-1,
+                           ifelse(-5<=x & x < 0, (3*x-2)/(x+1), 
+                                  ifelse(1<=x & x < 5, exp(x+1), "Valor no está en el dominio"))) 
+}
+```
+
+a. Evalue la función en los siguientes valores: -11, -7, -2, 0, 2 y 6. Interprete sus resultados.
+
+b. ¿Qué pasa si aplico la función en el valor 6,5 y si ahora aplica "6,5" (incluyendo comillas). Explique la diferencia.
+
+c. ¿Qué ocurre con la función en el valor 6? Solucione el problema. 
+
+d. Genere un objeto con una secuencia entre 1 a 5 y evalue la función corregida en c). Muestre sus valores.
+
+

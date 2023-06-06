@@ -1,0 +1,73 @@
+---
+title: "Taller de análisis de datos I"
+---
+
+## Descripción del curso
+
+El procesamiento de datos se ha vuelto uno de los temas más importantes en la actualidad. Cada día hay más profesionales que están optando por especializarse en la gestión de información para generar nuevo conocimiento y/u orientar la toma decisiones. En ese sentido, los datos han pasado a ser los protagonistas de nuestra época y es imprescindible desarrollar habilidades para comprender, procesar y analizar la información que se encuentra disponible.
+
+
+Una de las herramientas más útiles para realizar estas tareas es R, un lenguaje y entorno de programación abierto para el procesamiento y análisis de datos en un sinnúmero de disciplinas. La gran ventaja de esta herramienta, además de ser gratuito, es su flexibilidad y versatilidad, ya que con 19000 librerías disponibles se puede realizar una amplia gama de tareas con datos de distinta naturaleza [https://cran.r-project.org/](https://cran.r-project.org/). 
+
+Las clases estarán programas de la siguiente manera:
+
+|          |       Fecha        |    Horario    | Contenidos    |    Clase      | Laboratorio |
+|------------|:----------:|:----------:|------------|:----------:|:----------:|
+| Sesión 1 | Viernes 13/05/2023 | 09:00 - 12:15 | Introducción a `R` y `RStudio` | [🖥️](class/class-1.html "Clase 1"){aria-label="Clase 1 slides"} |     [📚](labs/lab-1.html "Laboratorio 1"){aria-label="Laboratorio 1"}      |
+| Sesión 2 | Viernes 27/05/2023 | 09:00 - 12:15 | Introducción a `R` y `RStudio` | [🖥️](class/class-1.html "Clase 1"){aria-label="Clase 1 slides"} |     [📚](labs/lab-1.html "Laboratorio 1"){aria-label="Laboratorio 1"}      |
+| Sesión 3 | Viernes 01/07/2023 | 09:00 - 12:15 | Lectura y exploración de datos |                                                                 |             |
+| Sesión 4 | Sábado 15/07/2023  | 09:00 - 12:15 | Manipulación de tablas         |                                                                 |             |
+| Sesión 5 | Viernes 02/09/2023 | 09:00 - 12:15 | Programación funcional I       |                                                                 |             |
+| Sesión 6 | Viernes 23/09/2023 | 09:00 - 12:15 | Programación funcional II      |                                                                 |             |
+| Sesión 7 | Viernes 04/11/2023 | 09:00 - 12:15 | Visualización de datos         |                                                                 |             |
+| Sesión 8 | Sábado 18/11/2023  | 09:00 - 12:15 | Reportería de datos            |                                                                 |             |
+
+## Objetivos de aprendizaje
+
+El objetivo de este taller es aplicar de manera práctica a las principales herramientas que ofrece R para la lectura, procesamiento y visualización de datos cuantitativos. Con esto se espera tener una base troncal para la exploración e implementación de cualquier otro análisis. 
+
+Al terminar el curso los estudiantes sabrán:
+
+1. Realizar análsis exploratorio de datos en `R`.
+
+2. Generar visualizaciones de datos de calidad en `R` con `ggplot2`.
+
+3. Programar a un nivel básico-intermedio con estructuras de control, funciones y procesos iterativos.
+
+Los puntos contenidos se realizarán utilizando `R`, por lo que **los/as estudiantes profundizarán su conocimiento de este lenguaje de programación**.
+
+
+## Metodología del curso
+
+El curso es práctico por lo que tiene el propósito de enseñar a programar orientado a objetivos de investigación, por lo que tendremos actividades:
+
+-   **Interactivas**: los estudiantes deberán programar análisis a partir de una pregunta/objetivo de investigación
+
+-   **Aplicación**: los estudiantes deberán aplicar alguna de las técnicas vistas a una pregunta **relevante para las políticas públicas**
+
+## Evaluaciones
+
+El curso tendrá 4 Tareas, ponderadas con un 25% cada una y se realizarán en parejas. Las tareas se organizaran de la siguiente manera:
+
+|         | Fecha Publicación | Fecha - Horario de entrega | Contenidos                               |                     Pautas                      |
+|---------------|:-------------:|:-------------:|---------------|:-------------:|
+| Tarea 1 |    15/06/2023     |     07/07/2023 - 23:59     | Vectores, matrices, listas y data frames | [Click aquí](/exams/Tarea1.pdf "Pauta Tarea 1") |
+| Tarea 2 |    15/07/2023     |     06/08/2023 - 23:59     | Análisis descriptivo de datos            |                                                 |
+| Tarea 3 |    01/10/2023     |     22/10/2023 - 23:59     | Funciones y procesos iterativos          |                                                 |
+| Tarea 4 |    01/11/2023     |     19/11/2023 - 23:59     | Visualización de datos                   |                                                 |
+
+**Todas las evaluaciones se deben enviar por correo al profesor José Daniel Conejeros [jdconejeros\@uc.cl](jdconejeros@uc.cl) con copia a la ayudante Sofía Madariaga Alvarado [samadariaga\@uc.cl](samadariaga@uc.cl).**
+
+**Nota:** Las parejas tienen que ser de áreas distintas. Pueden cambiar las parejas a lo largo de las evaluaciones. También puede ser individual.
+
+## Integridad académica
+
+*Como miembro de la comunidad de la Pontificia Universidad Católica de Chile, me comprometo a respetar los principios y normativas que la rigen. Asimismo, me comprometo a actuar con rectitud y honestidad en las relaciones con los demás integrantes de la comunidad y en la realización de todo trabajo, particularmente en aquellas actividades vinculadas a la docencia, al aprendizaje y la creación, difusión y transferencia del conocimiento. Además, me comprometo a velar por la dignidad e integridad de las personas, evitando incurrir en y, rechazando, toda conducta abusiva de carácter físico, verbal, psicológico y de violencia sexual. Del mismo modo, asumo el compromiso de cuidar los bienes de la Universidad*.
+
+Más detalles sobre la integridad académica UC aquí: <https://integridadacademica.uc.cl/>
+
+## Contribuciones y agradecimientos
+
+El formato web de este curso fue desarrollado y adaptado a partir del trabajo de la Ph.D. [Mine Çetinkaya-Rundel](https://mine-cr.com/) Profesora y Directora de Estudios de Grado del Departamento de Ciencias Estadísticas de la Universidad de Duke.
+
+-   Puedes acceder al curso de referencia aquí: [STA 210](https://sta210-s22.github.io/website/)
