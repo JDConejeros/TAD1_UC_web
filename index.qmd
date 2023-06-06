@@ -6,36 +6,34 @@ title: "Taller de análisis de datos I"
 
 El procesamiento de datos se ha vuelto uno de los temas más importantes en la actualidad. Cada día hay más profesionales que están optando por especializarse en la gestión de información para generar nuevo conocimiento y/u orientar la toma decisiones. En ese sentido, los datos han pasado a ser los protagonistas de nuestra época y es imprescindible desarrollar habilidades para comprender, procesar y analizar la información que se encuentra disponible.
 
-
-Una de las herramientas más útiles para realizar estas tareas es R, un lenguaje y entorno de programación abierto para el procesamiento y análisis de datos en un sinnúmero de disciplinas. La gran ventaja de esta herramienta, además de ser gratuito, es su flexibilidad y versatilidad, ya que con 19000 librerías disponibles se puede realizar una amplia gama de tareas con datos de distinta naturaleza [https://cran.r-project.org/](https://cran.r-project.org/). 
+Una de las herramientas más útiles para realizar estas tareas es R, un lenguaje y entorno de programación abierto para el procesamiento y análisis de datos en un sinnúmero de disciplinas. La gran ventaja de esta herramienta, además de ser gratuito, es su flexibilidad y versatilidad, ya que con 19000 librerías disponibles se puede realizar una amplia gama de tareas con datos de distinta naturaleza <https://cran.r-project.org/>.
 
 Las clases estarán programas de la siguiente manera:
 
-|          |       Fecha        |    Horario    | Contenidos    |    Clase      | Laboratorio |
-|------------|:----------:|:----------:|------------|:----------:|:----------:|
-| Sesión 1 | Viernes 13/05/2023 | 09:00 - 12:15 | Introducción a `R` y `RStudio` | [🖥️](class/class-1.html "Clase 1"){aria-label="Clase 1 slides"} |     [📚](labs/lab-1.html "Laboratorio 1"){aria-label="Laboratorio 1"}      |
-| Sesión 2 | Viernes 27/05/2023 | 09:00 - 12:15 | Introducción a `R` y `RStudio` | [🖥️](class/class-1.html "Clase 1"){aria-label="Clase 1 slides"} |     [📚](labs/lab-1.html "Laboratorio 1"){aria-label="Laboratorio 1"}      |
-| Sesión 3 | Viernes 01/07/2023 | 09:00 - 12:15 | Lectura y exploración de datos |                                                                 |             |
-| Sesión 4 | Sábado 15/07/2023  | 09:00 - 12:15 | Manipulación de tablas         |                                                                 |             |
-| Sesión 5 | Viernes 02/09/2023 | 09:00 - 12:15 | Programación funcional I       |                                                                 |             |
-| Sesión 6 | Viernes 23/09/2023 | 09:00 - 12:15 | Programación funcional II      |                                                                 |             |
-| Sesión 7 | Viernes 04/11/2023 | 09:00 - 12:15 | Visualización de datos         |                                                                 |             |
-| Sesión 8 | Sábado 18/11/2023  | 09:00 - 12:15 | Reportería de datos            |                                                                 |             |
+|          |       Fecha        |    Horario    | Contenidos                     |                              Clase                              |                            Laboratorio                            |
+|-----------|:---------:|:---------:|-----------|:-------------:|:-------------:|
+| Sesión 1 | Viernes 13/05/2023 | 09:00 - 12:15 | Introducción a `R` y `RStudio` | [🖥️](class/class-1.html "Clase 1"){aria-label="Clase 1 slides"} | [📚](labs/lab-1.html "Laboratorio 1"){aria-label="Laboratorio 1"} |
+| Sesión 2 | Viernes 27/05/2023 | 09:00 - 12:15 | Introducción a `R` y `RStudio` | [🖥️](class/class-1.html "Clase 1"){aria-label="Clase 1 slides"} | [📚](labs/lab-1.html "Laboratorio 1"){aria-label="Laboratorio 1"} |
+| Sesión 3 | Viernes 01/07/2023 | 09:00 - 12:15 | Lectura y exploración de datos |                                                                 |                                                                   |
+| Sesión 4 | Sábado 15/07/2023  | 09:00 - 12:15 | Manipulación de tablas         |                                                                 |                                                                   |
+| Sesión 5 | Viernes 02/09/2023 | 09:00 - 12:15 | Programación funcional I       |                                                                 |                                                                   |
+| Sesión 6 | Viernes 23/09/2023 | 09:00 - 12:15 | Programación funcional II      |                                                                 |                                                                   |
+| Sesión 7 | Viernes 04/11/2023 | 09:00 - 12:15 | Visualización de datos         |                                                                 |                                                                   |
+| Sesión 8 | Sábado 18/11/2023  | 09:00 - 12:15 | Reportería de datos            |                                                                 |                                                                   |
 
 ## Objetivos de aprendizaje
 
-El objetivo de este taller es aplicar de manera práctica a las principales herramientas que ofrece R para la lectura, procesamiento y visualización de datos cuantitativos. Con esto se espera tener una base troncal para la exploración e implementación de cualquier otro análisis. 
+El objetivo de este taller es aplicar de manera práctica a las principales herramientas que ofrece R para la lectura, procesamiento y visualización de datos cuantitativos. Con esto se espera tener una base troncal para la exploración e implementación de cualquier otro análisis.
 
 Al terminar el curso los estudiantes sabrán:
 
-1. Realizar análsis exploratorio de datos en `R`.
+1.  Realizar análsis exploratorio de datos en `R`.
 
-2. Generar visualizaciones de datos de calidad en `R` con `ggplot2`.
+2.  Generar visualizaciones de datos de calidad en `R` con `ggplot2`.
 
-3. Programar a un nivel básico-intermedio con estructuras de control, funciones y procesos iterativos.
+3.  Programar a un nivel básico-intermedio con estructuras de control, funciones y procesos iterativos.
 
 Los puntos contenidos se realizarán utilizando `R`, por lo que **los/as estudiantes profundizarán su conocimiento de este lenguaje de programación**.
-
 
 ## Metodología del curso
 
@@ -50,8 +48,8 @@ El curso es práctico por lo que tiene el propósito de enseñar a programar ori
 El curso tendrá 4 Tareas, ponderadas con un 25% cada una y se realizarán en parejas. Las tareas se organizaran de la siguiente manera:
 
 |         | Fecha Publicación | Fecha - Horario de entrega | Contenidos                               |                     Pautas                      |
-|---------------|:-------------:|:-------------:|---------------|:-------------:|
-| Tarea 1 |    15/06/2023     |     07/07/2023 - 23:59     | Vectores, matrices, listas y data frames | [Click aquí](/exams/Tarea1.pdf "Pauta Tarea 1") |
+|-------------|:-----------:|:-----------:|---------------|:-----------------:|
+| Tarea 1 |    15/06/2023     |     07/07/2023 - 23:59     | Vectores, matrices, listas y data frames | [Click aquí](/exams/ "Pauta Tarea 1") |
 | Tarea 2 |    15/07/2023     |     06/08/2023 - 23:59     | Análisis descriptivo de datos            |                                                 |
 | Tarea 3 |    01/10/2023     |     22/10/2023 - 23:59     | Funciones y procesos iterativos          |                                                 |
 | Tarea 4 |    01/11/2023     |     19/11/2023 - 23:59     | Visualización de datos                   |                                                 |
