@@ -2,6 +2,8 @@
 title: "Laboratorio 1"
 subtitle: "Iniciación en R"
 editor: visual
+include-after-body: 
+  - ../html/footer_post.html
 ---
 
 ::: {.callout-note title="Conceptos claves"}
@@ -14,15 +16,14 @@ editor: visual
 **Coerción implícita**: proceso en el cual el lenguaje de programación define un ajuste por defecto.
 :::
 
-En este taller nos enfocaremos en una introducción a R para el procesamiento datos. Para instala `R` y `RStudio` en tu computador puedes recurrir a los siguientes enlaces: 
+En este taller nos enfocaremos en una introducción a R para el procesamiento datos. Para instala `R` y `RStudio` en tu computador puedes recurrir a los siguientes enlaces:
 
-- <https://cran.r-project.org/>
-- <https://posit.co/download/rstudio-desktop/>
+-   <https://cran.r-project.org/>
+-   <https://posit.co/download/rstudio-desktop/>
 
 También puedes ver el siguiente video tutorial: <https://jd-conejeros.com/blog/2023/2023-03-15-r-rstudio/>
 
 Recuerda que puedes descargar y reproducir este proyecto directo en `RStudio` dando [Click aquí](/labs/TAD1_clase1_Taller.zip "Lab 1 zip") ⏎
-
 
 ## Interactuando con R y RStudio
 
@@ -34,7 +35,7 @@ Los comentarios que no se ejecutan como comandos, en otras palabras, es código 
 # ; : Para escribir más de una función en la misma línea
 ```
 
-**Recomendación general:** todo lo que tenga que ver con procesamiento, análisis de bases de datos, entre otros, debe ser en un lenguaje estandarizado: sin tilde, ñ, caracteres especiales ni mayúsculas. Con esto se evitan bastantes problemas en un inicio. 
+**Recomendación general:** todo lo que tenga que ver con procesamiento, análisis de bases de datos, entre otros, debe ser en un lenguaje estandarizado: sin tilde, ñ, caracteres especiales ni mayúsculas. Con esto se evitan bastantes problemas en un inicio.
 
 Los directorios son relevantes, pues nos entregan una ruta relativa a la cual acceder en nuestro computador. Para esto podemos usar las siguientes funciones en `R`:
 
@@ -58,19 +59,19 @@ setwd("\Users\josedanielconejeros\Dropbox")
 setwd("/Users/josedanielconejeros/Dropbox")
 ```
 
-La mejor opción, será trabajar proyectos en `R`. Puedes crear proyectos de la siguiente manera: <video https://www.youtube.com/watch?v=FnkdlMIHYqQ>
+La mejor opción, será trabajar proyectos en `R`. Puedes crear proyectos de la siguiente manera: \<video https://www.youtube.com/watch?v=FnkdlMIHYqQ\>
 
 ## Objetos en R
 
-En términos generales, todos los elementos que maneja `R` son objetos: un valor numérico es un objeto, un vector es un objeto, una función es un objeto, una base de datos es un objeto, un gráfico es un objeto, etc. Los objetos son entes con datos almacenados, en palabras más sencillas,  contenedores de información que permiten al usuario realizar procedimientos numéricos, estadísticos, tabulaciones, entre otros.
+En términos generales, todos los elementos que maneja `R` son objetos: un valor numérico es un objeto, un vector es un objeto, una función es un objeto, una base de datos es un objeto, un gráfico es un objeto, etc. Los objetos son entes con datos almacenados, en palabras más sencillas, contenedores de información que permiten al usuario realizar procedimientos numéricos, estadísticos, tabulaciones, entre otros.
 
 Que `R` sea un lenguaje de programación orientado a objetos (*Object-Oriented Programming*) significa que una misma función hace cosas distintas según la clase del objeto que recibe como argumento, pudiendo incluso no hacer nada (o producir un error) si se le pasan argumentos de una clase inadecuada.
 
-A continuación veremos algunos objetos de ejemplo: 
+A continuación veremos algunos objetos de ejemplo:
 
-### Vectores numéricos 
+### Vectores numéricos
 
-Podemos considerar vectores de uno o varios elementos 
+Podemos considerar vectores de uno o varios elementos
 
 ```{r}
 a1 <- c(1) #Vector de un elemento
@@ -113,6 +114,7 @@ numeros_palabras
 secuencia <- seq(0, 1, length=11)
 secuencia
 ```
+
 ```{r}
 #| error: true
 secuencia*numeros_palabras
@@ -121,7 +123,7 @@ secuencia*numeros_palabras
 En este caso se produce porque está intentando multiplicar un vector de texto por uno numérico.
 
 ::: {.callout-note title="Conceptos claves"}
-**Coerción implícita**: proceso en el cual el lenguaje de programación define un ajuste por defecto. En este caso `c(1, "hola" , "chao" , 4)` asume por defecto que el vector será de caracteres. 
+**Coerción implícita**: proceso en el cual el lenguaje de programación define un ajuste por defecto. En este caso `c(1, "hola" , "chao" , 4)` asume por defecto que el vector será de caracteres.
 :::
 
 También podemos realizar operaciones aritméticas con vectores:
@@ -150,7 +152,7 @@ promedio
 
 ### String y factores
 
-Tendremos instancias para profundizar en este tipo de objetos. Lo importante es recordar la coerción implíca subyacente a la hora de trabajar con textos. 
+Tendremos instancias para profundizar en este tipo de objetos. Lo importante es recordar la coerción implíca subyacente a la hora de trabajar con textos.
 
 ```{r}
 #Dummy
@@ -169,15 +171,15 @@ acuerdo <- c("Muy en Desacuerdo", "Desacuerdo", "Ni en desacuerdo", "Ni en desac
 acuerdo[5]
 ```
 
-**¿Cuál es el problema con estas variables?** 
+**¿Cuál es el problema con estas variables?**
 
 ```{r}
 class(sexo)
 ```
 
-En ciertas operaciones, como la visualización de datos, contar con un formato más ordenado a la hora de construir una variable cualitativa es clave. Para esto utilizamos los **factores**. 
+En ciertas operaciones, como la visualización de datos, contar con un formato más ordenado a la hora de construir una variable cualitativa es clave. Para esto utilizamos los **factores**.
 
-Los factores son variables que cuenta con etiquetas que permiten representar sus valores numéricos. A continuación un ejemplo: 
+Los factores son variables que cuenta con etiquetas que permiten representar sus valores numéricos. A continuación un ejemplo:
 
 ```{r}
 #Debemos crear factores numéricos con etiquetas
@@ -194,16 +196,16 @@ class(sexo)
 
 ## Matrices, dataframes y listas
 
-### Matrices 
+### Matrices
 
-Las matrices son arreglos bidimensionales (filas, columnas) y solo cuentan con elementos de la misma naturaleza. Por ejemplo, la siguiente matriz cuenta con solo elementos de tipo numérico: 
+Las matrices son arreglos bidimensionales (filas, columnas) y solo cuentan con elementos de la misma naturaleza. Por ejemplo, la siguiente matriz cuenta con solo elementos de tipo numérico:
 
 ```{r}
 #Ejemplo de matriz
 matrix(1:9,3,3) #Matriz de 3filasx3columnas con valores del 1 al 9
 ```
 
-También podemos considerar las matrices sobre objetos y realizar acciones sobre ellas: 
+También podemos considerar las matrices sobre objetos y realizar acciones sobre ellas:
 
 ```{r}
 x <- matrix(1:9,3,3)
@@ -212,7 +214,7 @@ x
 dim(x)
 ```
 
-Construyamos las siguientes matrices: 
+Construyamos las siguientes matrices:
 
 ```{r}
 # Podemos definir objetos como matrices
@@ -263,7 +265,8 @@ y_cuadrada <- y[1:2,1:2] # Matriz cuadrada
 # Multiplicación de matrices
 y_cuadrada %*% z
 ```
-El determinante de una matriz es se obtiene al restar la multiplicación de los elementos de la diagonal principal de la matriz y la multiplicación de los elementos de la diagonal secundaria de la misma matriz. Esto nos será útil pues permite saber si estamos frente a una matriz singular ($det=0$) o no singular ($det\neq0$). 
+
+El determinante de una matriz es se obtiene al restar la multiplicación de los elementos de la diagonal principal de la matriz y la multiplicación de los elementos de la diagonal secundaria de la misma matriz. Esto nos será útil pues permite saber si estamos frente a una matriz singular ($det=0$) o no singular ($det\neq0$).
 
 ```{r}
 # Determinante
@@ -277,14 +280,14 @@ y_invertida <- solve(y_cuadrada)
 y_invertida
 ```
 
-Si multiplicamos la matriz original por la inversa obtenemos la identidad: 
+Si multiplicamos la matriz original por la inversa obtenemos la identidad:
 
 ```{r}
 # Comprobamos
 y_cuadrada %*% y_invertida
 ```
 
-Otras operaciones útiles con matrices: 
+Otras operaciones útiles con matrices:
 
 ```{r}
 # Rango de una matriz
@@ -326,13 +329,13 @@ matriz
 matriz[1,2] #Podemos ver el elemento 1 de la columna 2
 ```
 
-Más detalles sobre matrices: 
+Más detalles sobre matrices:
 
-Bates, Douglas, Martin Maechler, and Mikael Jagan. 2022. Matrix: Sparse and Dense Matrix Classes and Methods. [https://cran.r-project.org/web/packages/Matrix/Matrix.pdf](https://cran.r-project.org/web/packages/Matrix/Matrix.pdf) ⏎
+Bates, Douglas, Martin Maechler, and Mikael Jagan. 2022. Matrix: Sparse and Dense Matrix Classes and Methods. <https://cran.r-project.org/web/packages/Matrix/Matrix.pdf> ⏎
 
 ### Marcos de datos
 
-Un marco de datos (O *dataframe*) es un objeto bidimensional, pero a diferencia de las matrices (numéricas), pueden almacenar objetos de distinta naturaleza (alfanuméricos). En términos más precisos es un arreglo de vectores ordenados por columnas. Podemos transformar facilmente nuestra matriz en un marco de datos. 
+Un marco de datos (O *dataframe*) es un objeto bidimensional, pero a diferencia de las matrices (numéricas), pueden almacenar objetos de distinta naturaleza (alfanuméricos). En términos más precisos es un arreglo de vectores ordenados por columnas. Podemos transformar facilmente nuestra matriz en un marco de datos.
 
 ```{r}
 class(matriz)
@@ -350,15 +353,15 @@ data[1,1] # Fila, columna
 data[,1] # Fila
 ```
 
-Una forma de acceder a las variables de una marco de datos es aplicar un indexador `$`, por ejemplo: 
+Una forma de acceder a las variables de una marco de datos es aplicar un indexador `$`, por ejemplo:
 
 ```{r}
 data$edad
 ```
 
-Esto es factible ya que el marco de datos no es más que un arreglo de vectores. 
+Esto es factible ya que el marco de datos no es más que un arreglo de vectores.
 
-### Listas 
+### Listas
 
 La lista representa el siguiente nivel de complejidad en las estructuras de datos que R es capaz de manejar. Podemos entender una lista como un contenedor de objetos que pueden ser de cualquier clase: números, vectores, matrices, funciones, data.frames, incluso otras listas. Una lista puede contener a la vez varios de estos objetos, que pueden ser además de distintas dimensiones.
 
@@ -377,68 +380,58 @@ Podemos acceder a la información de las listas de variables maneras:
 objeto[[1]]
 ```
 
-También es posible realizar operaciones con las listas: 
+También es posible realizar operaciones con las listas:
 
 ```{r}
 objeto[[1]]*2
 ```
 
-Estas estructuras de datos serán bastante útiles a la hora de extraer información de funciones, realizar procesos iterativos y la extracción de datos desde la web. 
+Estas estructuras de datos serán bastante útiles a la hora de extraer información de funciones, realizar procesos iterativos y la extracción de datos desde la web.
 
-## Operadores en R 
+## Operadores en R
 
-Los operadores en R nos permiten complementar las acciones que estamos realizando sobre los objetos. Los más utilizados son: 
+Los operadores en R nos permiten complementar las acciones que estamos realizando sobre los objetos. Los más utilizados son:
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="25%"}
-
 **Operadores lógicos**
 
-- `&` = Y 
-- `|` = O
-- `!` = Negación
-- `~` = Negación
-
+-   `&` = Y
+-   `|` = O
+-   `!` = Negación
+-   `~` = Negación
 :::
 
 ::: {.column width="25%"}
-
 **Operadores aritméticos**
 
-- `+` = Suma
-- `-` = Resta
-- `*` = Multiplicación 
-- `/` = División
-- `^` = Potencia
-
+-   `+` = Suma
+-   `-` = Resta
+-   `*` = Multiplicación
+-   `/` = División
+-   `^` = Potencia
 :::
 
 ::: {.column width="25%"}
-
 **Operadores relacionales**
 
-- `>` = Mayor que 
-- `<` = Menor que
-- `>=` = Mayor o igual que 
-- `<=` = Menor o igual que 
-- `==` = Igual
-- `!=` = No igual 
-- `~=` = No igual
-
+-   `>` = Mayor que
+-   `<` = Menor que
+-   `>=` = Mayor o igual que
+-   `<=` = Menor o igual que
+-   `==` = Igual
+-   `!=` = No igual
+-   `~=` = No igual
 :::
 
 ::: {.column width="50%"}
-
 **Otros**
 
-- `NA` = Valor perdido
-
+-   `NA` = Valor perdido
+:::
 :::
 
-::::
-
-Veamos algunos ejemplos: 
+Veamos algunos ejemplos:
 
 ```{r}
 # Definamos valores
@@ -467,7 +460,7 @@ a > b | b < c
 
 Las funciones son acciones que se realizan sobre los objetos en `R`, operan bajo la siguiente lógica:
 
-![Lógica de funciones en R](img/log_r.png){width=750}
+![Lógica de funciones en R](img/log_r.png){width="750"}
 
 Veamos algunos ejemplos:
 
@@ -492,10 +485,9 @@ log10(100) # Forma equivalente de lo anterior
 log10(a)
 ```
 
-
 ### Argumentos
 
-Los argumentos de una función no son más que configuraciones particulares de la función para que realice la acción que deseamos, podemos consultarlas de la siguiente manera: 
+Los argumentos de una función no son más que configuraciones particulares de la función para que realice la acción que deseamos, podemos consultarlas de la siguiente manera:
 
 ```{r}
 help("log") #Para saber argumentos (elementos de la función)
@@ -515,15 +507,15 @@ a <- c(1, 2, NA, 4)
 sum(a)
 ```
 
-En este caso retorna un `NA` ya que nuestro vector tiene un elemento que es missing value, por lo que ante ese contexto la programación tiene definido por defecto retornar un `NA`. Podemos cambiar esto especificando el argumento `na.rm=TRUE` de la siguiente manera: 
+En este caso retorna un `NA` ya que nuestro vector tiene un elemento que es missing value, por lo que ante ese contexto la programación tiene definido por defecto retornar un `NA`. Podemos cambiar esto especificando el argumento `na.rm=TRUE` de la siguiente manera:
 
 ```{r}
 sum(a, na.rm=TRUE)
 ```
 
-Ahora obtuvimos el resultado, pues le dijimos al `R` que sume los valores  asumiendo como  verdadera la orden: *remover los valores NA*
+Ahora obtuvimos el resultado, pues le dijimos al `R` que sume los valores asumiendo como verdadera la orden: *remover los valores NA*
 
-## Ejercicio propuesto 
+## Ejercicio propuesto
 
 Revise la siguiente función y responda las preguntas.
 
@@ -534,12 +526,10 @@ fun3 <- function(x){ifelse(-10 <= x  & x < -5, x*2-1,
 }
 ```
 
-a. Evalue la función en los siguientes valores: -11, -7, -2, 0, 2 y 6. Interprete sus resultados.
+a.  Evalue la función en los siguientes valores: -11, -7, -2, 0, 2 y 6. Interprete sus resultados.
 
-b. ¿Qué pasa si aplico la función en el valor 6,5 y si ahora aplica "6,5" (incluyendo comillas). Explique la diferencia.
+b.  ¿Qué pasa si aplico la función en el valor 6,5 y si ahora aplica "6,5" (incluyendo comillas). Explique la diferencia.
 
-c. ¿Qué ocurre con la función en el valor 6? Solucione el problema. 
+c.  ¿Qué ocurre con la función en el valor 6? Solucione el problema.
 
-d. Genere un objeto con una secuencia entre 1 a 5 y evalue la función corregida en c). Muestre sus valores.
-
-
+d.  Genere un objeto con una secuencia entre 1 a 5 y evalue la función corregida en c). Muestre sus valores.

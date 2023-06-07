@@ -2,6 +2,8 @@
 title: "Clase 1 y 2"
 subtitle: "Políticas Públicas y Ciencia de Datos"
 editor: visual
+include-after-body: 
+  - ../html/footer_post.html
 ---
 
 ::: {.callout-warning title="Ideas más importantes"}
