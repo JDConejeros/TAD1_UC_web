@@ -11,7 +11,13 @@ El ayudante estará a cargo de a) entregar las clases a los estudiantes, b) real
 
 ![](images/team/jose.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of JDC" width="200"}
 
-[**José Daniel Conejeros**](https://jd-conejeros.com/); [`r fontawesome::fa(name = "envelope", fill = "duotone")` jdconejeros\@uc.cl](jose.conejeros1@mail.udp.cl); [`r fontawesome::fa(name = "github", fill = "duotone")` JDConejeros](https://github.com/JDConejeros); [`r fontawesome::fa(name = "link", fill = "duotone")` jd-conejeros.com](https://jd-conejeros.com)
+[**José Daniel Conejeros**](https://jd-conejeros.com/)
+
+[`r fontawesome::fa(name = "envelope", fill = "duotone")` jdconejeros\@uc.cl](jose.conejeros1@mail.udp.cl)
+
+[`r fontawesome::fa(name = "github", fill = "duotone")` JDConejeros](https://github.com/JDConejeros)
+
+[`r fontawesome::fa(name = "link", fill = "duotone")` jd-conejeros.com](https://jd-conejeros.com)
 
 Licenciado en Ciencias Sociales, Magíster (c) en Sociología y Estadística PUC. Sus temas de investigación actual son salud pública, cambio climático, pobreza y metodologías cuantitativas. Ha participado en proyectos de investigación en educación, género y actualmente pertenece al Nucleo Milenio de Resistencia Bacteriana (Microb-R). En el ámbito profesional, ha sido consultor en temas cuantitativos para distintas fundaciones y organizaciones sin fines de lucro.
 
@@ -25,7 +31,7 @@ El ayudante estará a cargo de a) ofrecer sesiones de apoyo a los estudiantes y 
 
 [**Sofía Madariaga**](https://github.com/s-madariaga)
 
-[`r fontawesome::fa(name = "envelope", fill = "duotone")` sofia.madariaga\@mail.udp.cl](sofia.madariaga@mail.udp.cl)
+[`r fontawesome::fa(name = "envelope", fill = "duotone")` samadariaga@uc.cl](samadariaga@uc.cl)
 
 [`r fontawesome::fa(name = "github", fill = "duotone")` s-madariaga](https://github.com/s-madariaga)
 
