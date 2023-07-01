@@ -1,0 +1,15 @@
+---
+title: "Laboratorio 2"
+subtitle: "Exploración de datos en R"
+editor: visual
+include-after-body: 
+  - ../html/footer_post.html
+---
+
+::: {.callout-note title="Conceptos claves"}
+:::
+
+En este taller nos enfocaremos en explorar tablas de datos en `R`. 
+
+Recuerda que puedes descargar y reproducir este proyecto directo en `RStudio` dando [Click aquí](/labs/TAD1_clase2_Taller.zip "Lab 2 zip") ⏎
+
