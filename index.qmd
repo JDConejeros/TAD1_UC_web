@@ -11,10 +11,10 @@ Una de las herramientas más útiles para realizar estas tareas es R, un lenguaj
 Las clases estarán programas de la siguiente manera:
 
 |          |       Fecha        |    Horario    | Contenidos                     |                              Clase                              |                            Laboratorio                            |
-|------------|:----------:|:----------:|------------|:----------:|:----------:|
+|----------|:------------------:|:-------------:|--------------------------------|:---------------------------------------------------------------:|:-----------------------------------------------------------------:|
 | Sesión 1 | Viernes 13/05/2023 | 09:00 - 12:15 | Introducción a `R` y `RStudio` | [🖥️](class/class-1.html "Clase 1"){aria-label="Clase 1 slides"} | [📚](labs/lab-1.html "Laboratorio 1"){aria-label="Laboratorio 1"} |
 | Sesión 2 | Viernes 27/05/2023 | 09:00 - 12:15 | Introducción a `R` y `RStudio` | [🖥️](class/class-1.html "Clase 1"){aria-label="Clase 1 slides"} | [📚](labs/lab-1.html "Laboratorio 1"){aria-label="Laboratorio 1"} |
-| Sesión 3 | Viernes 01/07/2023 | 09:00 - 12:15 | Lectura y exploración de datos | [🖥️](class/class2.html "Clase 1"){aria-label="Clase 2 slides"} | [📚](labs/lab-2.html "Laboratorio 2"){aria-label="Laboratorio 2"} |
+| Sesión 3 | Viernes 01/07/2023 | 09:00 - 12:15 | Lectura y exploración de datos | [🖥️](class/class2.html "Clase 1"){aria-label="Clase 2 slides"}  | [📚](labs/lab-2.html "Laboratorio 2"){aria-label="Laboratorio 2"} |
 | Sesión 4 | Sábado 15/07/2023  | 09:00 - 12:15 | Manipulación de tablas         |                                                                 |                                                                   |
 | Sesión 5 | Viernes 02/09/2023 | 09:00 - 12:15 | Programación funcional I       |                                                                 |                                                                   |
 | Sesión 6 | Viernes 23/09/2023 | 09:00 - 12:15 | Programación funcional II      |                                                                 |                                                                   |
@@ -48,7 +48,7 @@ El curso es práctico por lo que tiene el propósito de enseñar a programar ori
 El curso tendrá 4 Tareas, ponderadas con un 25% cada una y se realizarán en parejas. Las tareas se organizaran de la siguiente manera:
 
 |         | Fecha Publicación | Fecha - Horario de entrega | Contenidos                               |                     Pautas                      |                                                        Datos |
-|------------|:----------:|:----------:|------------|:----------:|-----------:|
+|---------|:-----------------:|:--------------------------:|------------------------------------------|:-----------------------------------------------:|-------------------------------------------------------------:|
 | Tarea 1 |    01/07/2023     |     17/07/2023 - 23:59     | Vectores, matrices, listas y data frames | [Click aquí](/exams/Tarea1.pdf "Pauta Tarea 1") | [Click aquí](/exams/simce2m2016_extracto.csv "Data Tarea 1") |
 | Tarea 2 |    16/07/2023     |     06/08/2023 - 23:59     | Análisis descriptivo de datos            |                                                 |                                                              |
 | Tarea 3 |    01/10/2023     |     22/10/2023 - 23:59     | Funciones y procesos iterativos          |                                                 |                                                              |
