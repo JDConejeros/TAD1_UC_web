@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TAD1 - Año 2023 - Taller de análisis de datos I</title>
+<title>TAD1 - Año 2023 - Laboratorio 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./course-bib.html" rel="next">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -65,18 +64,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="TAD1 - Año 2023 - Taller de análisis de datos I">
-<meta property="og:description" content="">
+<meta property="og:title" content="TAD1 - Año 2023 - Laboratorio 2">
+<meta property="og:description" content="Exploración de datos en R">
 <meta property="og:image" content="https://jd-conejeros.com/images/fgch.png">
 <meta property="og:site-name" content="TAD1 - Año 2023">
 <meta property="og:image:height" content="151">
 <meta property="og:image:width" content="174">
-<meta name="twitter:title" content="TAD1 - Año 2023 - Taller de análisis de datos I">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://jd-conejeros.com/images/logo.png">
+<meta name="twitter:title" content="TAD1 - Año 2023 - Laboratorio 2">
+<meta name="twitter:description" content="Exploración de datos en R">
+<meta name="twitter:image" content="https://jd-conejeros.com/labs/images/logo.png">
 <meta name="twitter:creator" content="@Jose_Conejeros">
-<meta name="twitter:image-height" content="224">
-<meta name="twitter:image-width" content="190">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -89,7 +86,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Información del curso</a></li><li class="breadcrumb-item"><a href="./index.html">Descripción del curso</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Laboratorio 2</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -103,8 +100,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/logo_tad1.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/logo_tad1.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/JDConejeros/TAD1_UC_web" title="Repositorio del sitio web" class="quarto-navigation-tool px-1" aria-label="Repositorio del sitio web"><i class="bi bi-github"></i></a>
@@ -122,34 +119,34 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
  <span class="menu-text">Información del curso</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Descripción del curso</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-bib.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-bib.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Literatura del curso</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-team.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-team.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Equipo docente</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-contact.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-contact.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Atención de estudiantes</span></a>
   </div>
 </li>
@@ -166,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./class/class-1.html" class="sidebar-item-text sidebar-link">
+  <a href="../class/class-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Clase 1</span></a>
   </div>
 </li>
@@ -183,13 +180,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/lab-1.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/lab-2.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab-2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 2</span></a>
   </div>
 </li>
@@ -201,25 +198,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">En esta página</h2>
-   
-  <ul>
-  <li><a href="#descripción-del-curso" id="toc-descripción-del-curso" class="nav-link active" data-scroll-target="#descripción-del-curso">Descripción del curso</a></li>
-  <li><a href="#objetivos-de-aprendizaje" id="toc-objetivos-de-aprendizaje" class="nav-link" data-scroll-target="#objetivos-de-aprendizaje">Objetivos de aprendizaje</a></li>
-  <li><a href="#metodología-del-curso" id="toc-metodología-del-curso" class="nav-link" data-scroll-target="#metodología-del-curso">Metodología del curso</a></li>
-  <li><a href="#evaluaciones" id="toc-evaluaciones" class="nav-link" data-scroll-target="#evaluaciones">Evaluaciones</a></li>
-  <li><a href="#integridad-académica" id="toc-integridad-académica" class="nav-link" data-scroll-target="#integridad-académica">Integridad académica</a></li>
-  <li><a href="#contribuciones-y-agradecimientos" id="toc-contribuciones-y-agradecimientos" class="nav-link" data-scroll-target="#contribuciones-y-agradecimientos">Contribuciones y agradecimientos</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/JDConejeros/TAD1_UC_web/edit/main/index.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/JDConejeros/TAD1_UC_web/issues/new" class="toc-action">Informar de un problema</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Taller de análisis de datos I</h1>
+<h1 class="title">Laboratorio 2</h1>
+<p class="subtitle lead">Exploración de datos en R</p>
 </div>
 
 
@@ -234,177 +221,67 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="descripción-del-curso" class="level2">
-<h2 class="anchored" data-anchor-id="descripción-del-curso">Descripción del curso</h2>
-<p>El procesamiento de datos se ha vuelto uno de los temas más importantes en la actualidad. Cada día hay más profesionales que están optando por especializarse en la gestión de información para generar nuevo conocimiento y/u orientar la toma decisiones. En ese sentido, los datos han pasado a ser los protagonistas de nuestra época y es imprescindible desarrollar habilidades para comprender, procesar y analizar la información que se encuentra disponible.</p>
-<p>Una de las herramientas más útiles para realizar estas tareas es R, un lenguaje y entorno de programación abierto para el procesamiento y análisis de datos en un sinnúmero de disciplinas. La gran ventaja de esta herramienta, además de ser gratuito, es su flexibilidad y versatilidad, ya que con 19000 librerías disponibles se puede realizar una amplia gama de tareas con datos de distinta naturaleza <a href="https://cran.r-project.org/" class="uri">https://cran.r-project.org/</a>.</p>
-<p>Las clases estarán programas de la siguiente manera:</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;">Fecha</th>
-<th style="text-align: center;">Horario</th>
-<th>Contenidos</th>
-<th style="text-align: center;">Clase</th>
-<th style="text-align: center;">Laboratorio</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sesión 1</td>
-<td style="text-align: center;">Viernes 13/05/2023</td>
-<td style="text-align: center;">09:00 - 12:15</td>
-<td>Introducción a <code>R</code> y <code>RStudio</code></td>
-<td style="text-align: center;"><a href="class/class-1.html" aria-label="Clase 1 slides" title="Clase 1">🖥️</a></td>
-<td style="text-align: center;"><a href="labs/lab-1.html" aria-label="Laboratorio 1" title="Laboratorio 1">📚</a></td>
-</tr>
-<tr class="even">
-<td>Sesión 2</td>
-<td style="text-align: center;">Viernes 27/05/2023</td>
-<td style="text-align: center;">09:00 - 12:15</td>
-<td>Introducción a <code>R</code> y <code>RStudio</code></td>
-<td style="text-align: center;"><a href="class/class-1.html" aria-label="Clase 1 slides" title="Clase 1">🖥️</a></td>
-<td style="text-align: center;"><a href="labs/lab-1.html" aria-label="Laboratorio 1" title="Laboratorio 1">📚</a></td>
-</tr>
-<tr class="odd">
-<td>Sesión 3</td>
-<td style="text-align: center;">Viernes 01/07/2023</td>
-<td style="text-align: center;">09:00 - 12:15</td>
-<td>Lectura y exploración de datos</td>
-<td style="text-align: center;"><a href="class/class-2.html" aria-label="Clase 2 slides" title="Clase 2">🖥️</a></td>
-<td style="text-align: center;"><a href="labs/lab-2.html" aria-label="Laboratorio 2" title="Laboratorio 2">📚</a></td>
-</tr>
-<tr class="even">
-<td>Sesión 4</td>
-<td style="text-align: center;">Viernes 28/07/2023</td>
-<td style="text-align: center;">09:00 - 12:15</td>
-<td>Manipulación de tablas</td>
-<td style="text-align: center;"><a href="class/class-3.html" aria-label="Clase 3 slides" title="Clase 3">🖥️</a></td>
-<td style="text-align: center;"><a href="labs/lab-3.html" aria-label="Laboratorio 3" title="Laboratorio 3">📚</a></td>
-</tr>
-<tr class="odd">
-<td>Sesión 5</td>
-<td style="text-align: center;">Viernes 02/09/2023</td>
-<td style="text-align: center;">09:00 - 12:15</td>
-<td>Programación funcional I</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td>Sesión 6</td>
-<td style="text-align: center;">Viernes 23/09/2023</td>
-<td style="text-align: center;">09:00 - 12:15</td>
-<td>Programación funcional II</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td>Sesión 7</td>
-<td style="text-align: center;">Viernes 04/11/2023</td>
-<td style="text-align: center;">09:00 - 12:15</td>
-<td>Visualización de datos</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td>Sesión 8</td>
-<td style="text-align: center;">Sábado 18/11/2023</td>
-<td style="text-align: center;">09:00 - 12:15</td>
-<td>Reportería de datos</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="objetivos-de-aprendizaje" class="level2">
-<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
-<p>El objetivo de este taller es aplicar de manera práctica a las principales herramientas que ofrece R para la lectura, procesamiento y visualización de datos cuantitativos. Con esto se espera tener una base troncal para la exploración e implementación de cualquier otro análisis.</p>
-<p>Al terminar el curso los estudiantes sabrán:</p>
-<ol type="1">
-<li><p>Realizar análsis exploratorio de datos en <code>R</code>.</p></li>
-<li><p>Generar visualizaciones de datos de calidad en <code>R</code> con <code>ggplot2</code>.</p></li>
-<li><p>Programar a un nivel básico-intermedio con estructuras de control, funciones y procesos iterativos.</p></li>
-</ol>
-<p>Los puntos contenidos se realizarán utilizando <code>R</code>, por lo que <strong>los/as estudiantes profundizarán su conocimiento de este lenguaje de programación</strong>.</p>
-</section>
-<section id="metodología-del-curso" class="level2">
-<h2 class="anchored" data-anchor-id="metodología-del-curso">Metodología del curso</h2>
-<p>El curso es práctico por lo que tiene el propósito de enseñar a programar orientado a objetivos de investigación, por lo que tendremos actividades:</p>
-<ul>
-<li><p><strong>Interactivas</strong>: los estudiantes deberán programar análisis a partir de una pregunta/objetivo de investigación</p></li>
-<li><p><strong>Aplicación</strong>: los estudiantes deberán aplicar alguna de las técnicas vistas a una pregunta <strong>relevante para las políticas públicas</strong></p></li>
-</ul>
-</section>
-<section id="evaluaciones" class="level2">
-<h2 class="anchored" data-anchor-id="evaluaciones">Evaluaciones</h2>
-<p>El curso tendrá 4 Tareas, ponderadas con un 25% cada una y se realizarán en parejas. Las tareas se organizaran de la siguiente manera:</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;">Fecha Publicación</th>
-<th style="text-align: center;">Fecha - Horario de entrega</th>
-<th>Contenidos</th>
-<th style="text-align: center;">Pautas</th>
-<th style="text-align: right;">Datos</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Tarea 1</td>
-<td style="text-align: center;">01/07/2023</td>
-<td style="text-align: center;">17/07/2023 - 23:59</td>
-<td>Vectores, matrices, listas y data frames</td>
-<td style="text-align: center;"><a href="./exams/Tarea1.pdf" title="Pauta Tarea 1">Click aquí</a></td>
-<td style="text-align: right;"><a href="./exams/simce2m2016_extracto.csv" title="Data Tarea 1">Click aquí</a></td>
-</tr>
-<tr class="even">
-<td>Tarea 2</td>
-<td style="text-align: center;">19/07/2023</td>
-<td style="text-align: center;">15/08/2023 - 23:59</td>
-<td>Análisis descriptivo de datos</td>
-<td style="text-align: center;"><a href="./exams/Tarea2.pdf" title="Pauta Tarea 2">Click aquí</a></td>
-<td style="text-align: right;"><a href="./exams/Hantavirus_chile.xlsx" title="Data Tarea 2">Click aquí</a></td>
-</tr>
-<tr class="odd">
-<td>Tarea 3</td>
-<td style="text-align: center;">01/10/2023</td>
-<td style="text-align: center;">22/10/2023 - 23:59</td>
-<td>Funciones y procesos iterativos</td>
-<td style="text-align: center;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="even">
-<td>Tarea 4</td>
-<td style="text-align: center;">01/11/2023</td>
-<td style="text-align: center;">19/11/2023 - 23:59</td>
-<td>Visualización de datos</td>
-<td style="text-align: center;"></td>
-<td style="text-align: right;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Todas las evaluaciones se deben enviar por correo al profesor José Daniel Conejeros <a href="jdconejeros@uc.cl">jdconejeros@uc.cl</a> con copia a la ayudante Sofía Madariaga Alvarado <a href="samadariaga@uc.cl">samadariaga@uc.cl</a>.</strong></p>
-<p><strong>Nota:</strong> Las parejas tienen que ser de áreas distintas. Pueden cambiar las parejas a lo largo de las evaluaciones. También puede ser individual.</p>
-</section>
-<section id="integridad-académica" class="level2">
-<h2 class="anchored" data-anchor-id="integridad-académica">Integridad académica</h2>
-<p><em>Como miembro de la comunidad de la Pontificia Universidad Católica de Chile, me comprometo a respetar los principios y normativas que la rigen. Asimismo, me comprometo a actuar con rectitud y honestidad en las relaciones con los demás integrantes de la comunidad y en la realización de todo trabajo, particularmente en aquellas actividades vinculadas a la docencia, al aprendizaje y la creación, difusión y transferencia del conocimiento. Además, me comprometo a velar por la dignidad e integridad de las personas, evitando incurrir en y, rechazando, toda conducta abusiva de carácter físico, verbal, psicológico y de violencia sexual. Del mismo modo, asumo el compromiso de cuidar los bienes de la Universidad</em>.</p>
-<p>Más detalles sobre la integridad académica UC aquí: <a href="https://integridadacademica.uc.cl/" class="uri">https://integridadacademica.uc.cl/</a></p>
-</section>
-<section id="contribuciones-y-agradecimientos" class="level2">
-<h2 class="anchored" data-anchor-id="contribuciones-y-agradecimientos">Contribuciones y agradecimientos</h2>
-<p>El formato web de este curso fue desarrollado y adaptado a partir del trabajo de la Ph.D.&nbsp;<a href="https://mine-cr.com/">Mine Çetinkaya-Rundel</a> Profesora y Directora de Estudios de Grado del Departamento de Ciencias Estadísticas de la Universidad de Duke.</p>
-<ul>
-<li>Puedes acceder al curso de referencia aquí: <a href="https://sta210-s22.github.io/website/">STA 210</a></li>
-</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Conceptos claves">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Conceptos claves
+</div>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<p>En este taller nos enfocaremos en explorar tablas de datos en <code>R</code>.</p>
+<p>Recuerda que puedes descargar y reproducir este proyecto directo en <code>RStudio</code> dando <a href="../labs/TAD1_clase2_Taller.zip" title="Lab 2 zip">Click aquí</a> ⏎</p>
 
 
-</section>
 
 </main> <!-- /main -->
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=640ce122b5b185001201cc4f&amp;product=inline-share-buttons&amp;source=platform" async="async"></script>
+
+<div class="sharethis-inline-share-buttons"></div>
+
+<div id="boton-container">
+  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="joconejerov" data-color="#00bc8c" data-emoji="" data-font="Lato" data-text="¿Me donas un café?" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#7f6000">
+  </script>
+</div>
+<style>
+  #boton-container {
+    text-align: center;
+  }
+  .bmc-btn {
+    height: 50px !important;
+    line-height: 28px !important;
+    font-size: 16px !important;
+    text-align: left;
+  }
+</style>
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://jd-conejeros-com.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//jd-conejeros-com.disqus.com/count.js" async=""></script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -753,22 +630,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./course-bib.html" class="pagination-link">
-        <span class="nav-page-text">Literatura del curso</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> 2023, José Daniel Conejeros Pavez | <a href="licenses.qmd">Licencia</a> </span> <br> <span class="faux-block"><a href="https://www.buymeacoffee.com/joconejerov">¿Donas un <i class="fa-solid fa-mug-hot" aria-label="mug-hot"></i>?</a> | <a href="https://galgos.donando.cl/"><img src="./images/fgch.png" class="quarto-discovered-preview-image img-fluid" data-fig-align="center" alt="https://galgos.donando.cl/" width="20"></a><a href="https://galgos.donando.cl/">Dona a la fundación Galgos Chile</a> </span></div>   
+    <div class="nav-footer-left"><span class="faux-block"><i class="fa-brands fa-creative-commons" aria-label="creative-commons"></i> <i class="fa-brands fa-creative-commons-by" aria-label="creative-commons-by"></i> 2023, José Daniel Conejeros Pavez | <a href="licenses.qmd">Licencia</a> </span> <br> <span class="faux-block"><a href="https://www.buymeacoffee.com/joconejerov">¿Donas un <i class="fa-solid fa-mug-hot" aria-label="mug-hot"></i>?</a> | <a href="https://galgos.donando.cl/"><img src="../images/fgch.png" class="quarto-discovered-preview-image img-fluid" data-fig-align="center" alt="https://galgos.donando.cl/" width="20"></a><a href="https://galgos.donando.cl/">Dona a la fundación Galgos Chile</a> </span></div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/JDConejeros/TAD1_UC_web/edit/main/labs/lab-3.qmd" class="toc-action">Editar esta página</a></p><p><a href="https://github.com/JDConejeros/TAD1_UC_web/issues/new" class="toc-action">Informar de un problema</a></p></div></div></div>
     <div class="nav-footer-right"><span class="faux-block">Hecho con <i class="fa-brands fa-r-project" aria-label="r-project"></i>, <a href="https://quarto.org">Quarto</a> y <a href="https://openai.com/api/">ChatGPT</a> </span> <br> <span class="faux-block">Revisa el código fuente en <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/JDConejeros/JDC_website">GitHub</a> </span></div>
   </div>
 </footer>

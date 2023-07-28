@@ -7,6 +7,13 @@
     "text": "Conceptos claves\n\n\n\n\n\n\nEn este taller nos enfocaremos en explorar tablas de datos en R.\nRecuerda que puedes descargar y reproducir este proyecto directo en RStudio dando Click aquí ⏎"
   },
   {
+    "objectID": "labs/lab-3.html",
+    "href": "labs/lab-3.html",
+    "title": "Laboratorio 2",
+    "section": "",
+    "text": "Conceptos claves\n\n\n\n\n\n\nEn este taller nos enfocaremos en explorar tablas de datos en R.\nRecuerda que puedes descargar y reproducir este proyecto directo en RStudio dando Click aquí ⏎"
+  },
+  {
     "objectID": "labs/lab-1.html",
     "href": "labs/lab-1.html",
     "title": "Laboratorio 1",
@@ -95,14 +102,14 @@
     "href": "index.html",
     "title": "Taller de análisis de datos I",
     "section": "",
-    "text": "El procesamiento de datos se ha vuelto uno de los temas más importantes en la actualidad. Cada día hay más profesionales que están optando por especializarse en la gestión de información para generar nuevo conocimiento y/u orientar la toma decisiones. En ese sentido, los datos han pasado a ser los protagonistas de nuestra época y es imprescindible desarrollar habilidades para comprender, procesar y analizar la información que se encuentra disponible.\nUna de las herramientas más útiles para realizar estas tareas es R, un lenguaje y entorno de programación abierto para el procesamiento y análisis de datos en un sinnúmero de disciplinas. La gran ventaja de esta herramienta, además de ser gratuito, es su flexibilidad y versatilidad, ya que con 19000 librerías disponibles se puede realizar una amplia gama de tareas con datos de distinta naturaleza https://cran.r-project.org/.\nLas clases estarán programas de la siguiente manera:\n\n\n\n\nFecha\nHorario\nContenidos\nClase\nLaboratorio\n\n\n\n\nSesión 1\nViernes 13/05/2023\n09:00 - 12:15\nIntroducción a R y RStudio\n🖥️\n📚\n\n\nSesión 2\nViernes 27/05/2023\n09:00 - 12:15\nIntroducción a R y RStudio\n🖥️\n📚\n\n\nSesión 3\nViernes 01/07/2023\n09:00 - 12:15\nLectura y exploración de datos\n🖥️\n📚\n\n\nSesión 4\nSábado 15/07/2023\n09:00 - 12:15\nManipulación de tablas\n\n\n\n\nSesión 5\nViernes 02/09/2023\n09:00 - 12:15\nProgramación funcional I\n\n\n\n\nSesión 6\nViernes 23/09/2023\n09:00 - 12:15\nProgramación funcional II\n\n\n\n\nSesión 7\nViernes 04/11/2023\n09:00 - 12:15\nVisualización de datos\n\n\n\n\nSesión 8\nSábado 18/11/2023\n09:00 - 12:15\nReportería de datos"
+    "text": "El procesamiento de datos se ha vuelto uno de los temas más importantes en la actualidad. Cada día hay más profesionales que están optando por especializarse en la gestión de información para generar nuevo conocimiento y/u orientar la toma decisiones. En ese sentido, los datos han pasado a ser los protagonistas de nuestra época y es imprescindible desarrollar habilidades para comprender, procesar y analizar la información que se encuentra disponible.\nUna de las herramientas más útiles para realizar estas tareas es R, un lenguaje y entorno de programación abierto para el procesamiento y análisis de datos en un sinnúmero de disciplinas. La gran ventaja de esta herramienta, además de ser gratuito, es su flexibilidad y versatilidad, ya que con 19000 librerías disponibles se puede realizar una amplia gama de tareas con datos de distinta naturaleza https://cran.r-project.org/.\nLas clases estarán programas de la siguiente manera:\n\n\n\n\nFecha\nHorario\nContenidos\nClase\nLaboratorio\n\n\n\n\nSesión 1\nViernes 13/05/2023\n09:00 - 12:15\nIntroducción a R y RStudio\n🖥️\n📚\n\n\nSesión 2\nViernes 27/05/2023\n09:00 - 12:15\nIntroducción a R y RStudio\n🖥️\n📚\n\n\nSesión 3\nViernes 01/07/2023\n09:00 - 12:15\nLectura y exploración de datos\n🖥️\n📚\n\n\nSesión 4\nViernes 28/07/2023\n09:00 - 12:15\nManipulación de tablas\n🖥️\n📚\n\n\nSesión 5\nViernes 02/09/2023\n09:00 - 12:15\nProgramación funcional I\n\n\n\n\nSesión 6\nViernes 23/09/2023\n09:00 - 12:15\nProgramación funcional II\n\n\n\n\nSesión 7\nViernes 04/11/2023\n09:00 - 12:15\nVisualización de datos\n\n\n\n\nSesión 8\nSábado 18/11/2023\n09:00 - 12:15\nReportería de datos"
   },
   {
     "objectID": "index.html#descripción-del-curso",
     "href": "index.html#descripción-del-curso",
     "title": "Taller de análisis de datos I",
     "section": "",
-    "text": "El procesamiento de datos se ha vuelto uno de los temas más importantes en la actualidad. Cada día hay más profesionales que están optando por especializarse en la gestión de información para generar nuevo conocimiento y/u orientar la toma decisiones. En ese sentido, los datos han pasado a ser los protagonistas de nuestra época y es imprescindible desarrollar habilidades para comprender, procesar y analizar la información que se encuentra disponible.\nUna de las herramientas más útiles para realizar estas tareas es R, un lenguaje y entorno de programación abierto para el procesamiento y análisis de datos en un sinnúmero de disciplinas. La gran ventaja de esta herramienta, además de ser gratuito, es su flexibilidad y versatilidad, ya que con 19000 librerías disponibles se puede realizar una amplia gama de tareas con datos de distinta naturaleza https://cran.r-project.org/.\nLas clases estarán programas de la siguiente manera:\n\n\n\n\nFecha\nHorario\nContenidos\nClase\nLaboratorio\n\n\n\n\nSesión 1\nViernes 13/05/2023\n09:00 - 12:15\nIntroducción a R y RStudio\n🖥️\n📚\n\n\nSesión 2\nViernes 27/05/2023\n09:00 - 12:15\nIntroducción a R y RStudio\n🖥️\n📚\n\n\nSesión 3\nViernes 01/07/2023\n09:00 - 12:15\nLectura y exploración de datos\n🖥️\n📚\n\n\nSesión 4\nSábado 15/07/2023\n09:00 - 12:15\nManipulación de tablas\n\n\n\n\nSesión 5\nViernes 02/09/2023\n09:00 - 12:15\nProgramación funcional I\n\n\n\n\nSesión 6\nViernes 23/09/2023\n09:00 - 12:15\nProgramación funcional II\n\n\n\n\nSesión 7\nViernes 04/11/2023\n09:00 - 12:15\nVisualización de datos\n\n\n\n\nSesión 8\nSábado 18/11/2023\n09:00 - 12:15\nReportería de datos"
+    "text": "El procesamiento de datos se ha vuelto uno de los temas más importantes en la actualidad. Cada día hay más profesionales que están optando por especializarse en la gestión de información para generar nuevo conocimiento y/u orientar la toma decisiones. En ese sentido, los datos han pasado a ser los protagonistas de nuestra época y es imprescindible desarrollar habilidades para comprender, procesar y analizar la información que se encuentra disponible.\nUna de las herramientas más útiles para realizar estas tareas es R, un lenguaje y entorno de programación abierto para el procesamiento y análisis de datos en un sinnúmero de disciplinas. La gran ventaja de esta herramienta, además de ser gratuito, es su flexibilidad y versatilidad, ya que con 19000 librerías disponibles se puede realizar una amplia gama de tareas con datos de distinta naturaleza https://cran.r-project.org/.\nLas clases estarán programas de la siguiente manera:\n\n\n\n\nFecha\nHorario\nContenidos\nClase\nLaboratorio\n\n\n\n\nSesión 1\nViernes 13/05/2023\n09:00 - 12:15\nIntroducción a R y RStudio\n🖥️\n📚\n\n\nSesión 2\nViernes 27/05/2023\n09:00 - 12:15\nIntroducción a R y RStudio\n🖥️\n📚\n\n\nSesión 3\nViernes 01/07/2023\n09:00 - 12:15\nLectura y exploración de datos\n🖥️\n📚\n\n\nSesión 4\nViernes 28/07/2023\n09:00 - 12:15\nManipulación de tablas\n🖥️\n📚\n\n\nSesión 5\nViernes 02/09/2023\n09:00 - 12:15\nProgramación funcional I\n\n\n\n\nSesión 6\nViernes 23/09/2023\n09:00 - 12:15\nProgramación funcional II\n\n\n\n\nSesión 7\nViernes 04/11/2023\n09:00 - 12:15\nVisualización de datos\n\n\n\n\nSesión 8\nSábado 18/11/2023\n09:00 - 12:15\nReportería de datos"
   },
   {
     "objectID": "index.html#objetivos-de-aprendizaje",
@@ -180,6 +187,62 @@
     "title": "Clase 1 y 2",
     "section": "Literatura y enlaces de referencia",
     "text": "Literatura y enlaces de referencia\nWickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. ” O’Reilly Media, Inc.”. Versión en español: https://r4ds.hadley.nz/\nRevisar el capítulo 1: Introducción\n\n\nVuelve a la descripción del curso ⏎"
+  },
+  {
+    "objectID": "class/class-3.html",
+    "href": "class/class-3.html",
+    "title": "Clase 3",
+    "section": "",
+    "text": "Ideas más importantes\n\n\n\n\nUna tabla de datos es un arreglo de dos dimensiones: [filas, columnas].\nLos pipes (%&gt;%) permiten encadenar un flujo completo de trabajo sobre datos.\nPodemos transformar la información de manera vectorizada."
+  },
+  {
+    "objectID": "class/class-3.html#presentación-de-la-clase",
+    "href": "class/class-3.html#presentación-de-la-clase",
+    "title": "Clase 3",
+    "section": "Presentación de la clase",
+    "text": "Presentación de la clase\n\n\nPuedes descargar la presentación en PDF dando Click aquí ⏎"
+  },
+  {
+    "objectID": "class/class-3.html#presentación-de-la-clase-1",
+    "href": "class/class-3.html#presentación-de-la-clase-1",
+    "title": "Clase 3",
+    "section": "Presentación de la clase",
+    "text": "Presentación de la clase\nPuedes revisar el laboratorio dando Click aquí ⏎\nTambién puedes descargar el proyecto directo para RStudio dando Click aquí ⏎"
+  },
+  {
+    "objectID": "class/class-3.html#literatura-y-enlaces-de-referencia",
+    "href": "class/class-3.html#literatura-y-enlaces-de-referencia",
+    "title": "Clase 3",
+    "section": "Literatura y enlaces de referencia",
+    "text": "Literatura y enlaces de referencia\nWickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. ” O’Reilly Media, Inc.”. Versión en español: https://r4ds.hadley.nz/\nRevisar el capítulos 4, 5, 6, 7, 8 y 20\n\n\nVuelve a la descripción del curso ⏎"
+  },
+  {
+    "objectID": "class/class-2.html",
+    "href": "class/class-2.html",
+    "title": "Clase 2",
+    "section": "",
+    "text": "Ideas más importantes\n\n\n\n\nImportar y exportar una tabla dependerá del formato de ingreso y el formato de salida. Es importante verificar el formato de las tablas antes de realizar procedimientos.\nLa exploración de datos será clave para identificar errores, valores fuera de rango, missing values y patrones en los datos.\nAntes de definir cualquier estrategia empírica es fundamental conocer la calidad de los datos que se dispone."
+  },
+  {
+    "objectID": "class/class-2.html#presentación-de-la-clase",
+    "href": "class/class-2.html#presentación-de-la-clase",
+    "title": "Clase 2",
+    "section": "Presentación de la clase",
+    "text": "Presentación de la clase\n\n\nPuedes descargar la presentación en PDF dando Click aquí ⏎"
+  },
+  {
+    "objectID": "class/class-2.html#presentación-de-la-clase-1",
+    "href": "class/class-2.html#presentación-de-la-clase-1",
+    "title": "Clase 2",
+    "section": "Presentación de la clase",
+    "text": "Presentación de la clase\nPuedes revisar el laboratorio dando Click aquí ⏎\nTambién puedes descargar el proyecto directo para RStudio dando Click aquí ⏎"
+  },
+  {
+    "objectID": "class/class-2.html#literatura-y-enlaces-de-referencia",
+    "href": "class/class-2.html#literatura-y-enlaces-de-referencia",
+    "title": "Clase 2",
+    "section": "Literatura y enlaces de referencia",
+    "text": "Literatura y enlaces de referencia\nWickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. ” O’Reilly Media, Inc.”. Versión en español: https://r4ds.hadley.nz/\nRevisar el capítulo 2 y 8\n\n\nVuelve a la descripción del curso ⏎"
   },
   {
     "objectID": "course-contact.html",
