@@ -1,6 +1,6 @@
 ---
 title: "Clase 1 y 2"
-subtitle: "Políticas Públicas y Ciencia de Datos"
+subtitle: "Introducción a R"
 editor: visual
 include-after-body: 
   - ../html/footer_post.html

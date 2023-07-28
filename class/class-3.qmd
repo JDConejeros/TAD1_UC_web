@@ -1,0 +1,41 @@
+---
+title: "Clase 3"
+subtitle: "Manipulación de tablas"
+editor: visual
+include-after-body: 
+  - ../html/footer_post.html
+---
+
+::: {.callout-warning title="Ideas más importantes"}
+1.  Una tabla de datos es un arreglo de dos dimensiones: \[filas, columnas\].
+
+2.  Los pipes (%\>%) permiten encadenar un flujo completo de trabajo sobre datos.
+
+3.  Podemos transformar la información de manera vectorizada.
+:::
+
+## Presentación de la clase
+
+<iframe src="/slides/TAD1_clase3.html" height="550" width="100%" allowfullscreen="true">
+
+</iframe>
+
+Puedes descargar la presentación en PDF dando [Click aquí](/slides/TAD1_clase3.pdf "Clase 3 pdf") ⏎
+
+## Presentación de la clase
+
+Puedes revisar el laboratorio dando [Click aquí](/labs/lab-3.qmd "Laboratorio 3") ⏎
+
+También puedes descargar el proyecto directo para `RStudio` dando [Click aquí](/labs/TAD1_clase3_Taller.zip "Lab 3 zip") ⏎
+
+## Literatura y enlaces de referencia
+
+Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc.". Versión en español: <https://r4ds.hadley.nz/>
+
+**Revisar el capítulos 4, 5, 6, 7, 8 y 20**
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Vuelve a la [descripción del curso](/ "Descripción del curso") ⏎
+:::

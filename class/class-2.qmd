@@ -1,0 +1,41 @@
+---
+title: "Clase 2"
+subtitle: "Exploración de tablas"
+editor: visual
+include-after-body: 
+  - ../html/footer_post.html
+---
+
+::: {.callout-warning title="Ideas más importantes"}
+1.  Importar y exportar una tabla dependerá del formato de ingreso y el formato de salida. Es importante verificar el formato de las tablas antes de realizar procedimientos.
+
+2.  La exploración de datos será clave para identificar errores, valores fuera de rango, missing values y patrones en los datos.
+
+3.  Antes de definir cualquier estrategia empírica es fundamental conocer la calidad de los datos que se dispone.
+:::
+
+## Presentación de la clase
+
+<iframe src="/slides/TAD1_clase1.html" height="550" width="100%" allowfullscreen="true">
+
+</iframe>
+
+Puedes descargar la presentación en PDF dando [Click aquí](/slides/TAD1_clase2.pdf "Clase 2 pdf") ⏎
+
+## Presentación de la clase
+
+Puedes revisar el laboratorio dando [Click aquí](/labs/lab-2.qmd "Laboratorio 2") ⏎
+
+También puedes descargar el proyecto directo para `RStudio` dando [Click aquí](/labs/TAD1_clase2_Taller.zip "Lab 2 zip") ⏎
+
+## Literatura y enlaces de referencia
+
+Wickham, H., & Grolemund, G. (2016). R for data science: import, tidy, transform, visualize, and model data. " O'Reilly Media, Inc.". Versión en español: <https://r4ds.hadley.nz/>
+
+**Revisar el capítulo 2 y 8**
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+Vuelve a la [descripción del curso](/ "Descripción del curso") ⏎
+:::
